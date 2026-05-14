@@ -12,6 +12,9 @@
 {{body}}
 
 {{/each}}
+{{#each now_shipping}}
+- **[{{repo}}](https://github.com/wranngle/{{repo}})** — {{last_commit_message}} (`{{short_sha}}`, {{committed_at}})
+{{/each}}
 ---
 
 **Operating record**
