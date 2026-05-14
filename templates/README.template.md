@@ -10,6 +10,12 @@
 {{/if}}- {{item}}
 {{/each}}
 
+{{#each reading}}
+{{#if header}}{{header}}
+
+{{/if}}- {{item}}
+{{/each}}
+
 ### Selected Work
 
 {{#each selected_work}}
