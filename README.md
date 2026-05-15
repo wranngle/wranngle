@@ -12,6 +12,23 @@ and the operator can inspect what happened.
 
 🟪 **Status: Exploring new opportunities**
 
+<!-- hiring:start -->
+### Hiring
+
+#### Production voice-agent observability
+
+Anyone deep on call-graph tracing, latency profiling, or eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
+
+Reach me at cody@wranngle.com.
+
+#### n8n + webhook security review
+
+Second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
+
+Reach me at cody@wranngle.com.
+
+<!-- hiring:end -->
+
 ### Selected Work
 
 **[voice_ai_agent_evals](https://github.com/wranngle/voice_ai_agent_evals)**  
