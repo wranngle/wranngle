@@ -1,0 +1,16 @@
+books:
+  - title: Designing Data-Intensive Applications
+    author: Martin Kleppmann
+    cover: https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg
+    percent: 72
+    link: https://dataintensive.net/
+  - title: Staff Engineer
+    author: Will Larson
+    cover: https://covers.openlibrary.org/b/isbn/9781736417911-M.jpg
+    percent: 42
+    link: https://staffeng.com/book
+  - title: The Pragmatic Programmer
+    author: Andrew Hunt & David Thomas
+    cover: https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg
+    percent: 18
+    link: https://pragprog.com/titles/tpp20/
