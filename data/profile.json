@@ -1,0 +1,43 @@
+{
+  "name": "wranngle",
+  "intro": "I build voice AI agents, workflow automation, and the small full-stack systems\naround them: the webhook contracts, eval harnesses, operator surfaces, CRM\nhandoffs, runbooks, and failure paths that make an automation usable after the\ndemo.\n\nThe shape of the work is usually some mix of AI automation engineering, voice AI\nengineering, workflow automation, and full-stack TypeScript. The useful overlap\nis where an agent understands the job, the surrounding system moves the work,\nand the operator can inspect what happened.",
+  "status": "🟪 **Status: Exploring new opportunities**",
+  "selected_work": [
+    {
+      "slug": "voice_ai_agent_evals",
+      "headline": "Eval harness for ElevenLabs voice agents — deterministic scenarios, latency\nbudgets, prompt versions, and scoring rubrics.",
+      "body": "Production voice agents need more than a happy-path transcript. This repo is\nthe testing surface for synthetic conversations, regression checks, latency\nbudgets, and prompt/version discipline around a real Sarah agent.\n[![Sarah Eval Demo](https://img.shields.io/badge/Watch-Loom_Walkthrough-blue?style=for-the-badge)](https://www.loom.com/share/PLACEHOLDER)"
+    },
+    {
+      "slug": "gtm_ops",
+      "headline": "Voice-AI-led GTM runtime.",
+      "body": "The assembly layer that connects inbound voice interactions to CRM context,\nstructured extraction, proposal inputs, branded PDFs, and audit trails. The\nimportant part is not the PDF; it is the path from caller intent to operator\nreview."
+    },
+    {
+      "slug": "n8n",
+      "headline": null,
+      "body": "Sanitized workflow library for lead intake, enrichment, routing, post-call\nprocessing, and webhook security middleware. n8n is glue, not the product, but\nthe glue still needs naming, contracts, and failure handling."
+    },
+    {
+      "slug": "wranngle_com",
+      "headline": null,
+      "body": "The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,\nBun, and ArkType-validated lead capture with plain-text and JSON-LD profile\nsurfaces for humans and machines."
+    },
+    {
+      "slug": "career_architect",
+      "headline": null,
+      "body": "Python career-ops automation built like a GTM pipeline: profile data,\napplication tracking, job-description evaluation, tailored CV generation, and\nrepeatable portal workflows."
+    }
+  ],
+  "operating_record": [
+    "10 years across MSP automation, escalation, documentation, and support\n  environments.",
+    "500+ client environments and 4,000+ endpoints supported.",
+    "700+ SOP guides, templates, and runbooks authored for a 10-person team.",
+    "Production ElevenLabs voice-agent work across 15 client sites, with latency,\n  enrichment, handoff, and regression behavior measured.",
+    "Wranngle is a controlled public lab for service-business voice AI and GTM\n  automation, supported by an ElevenLabs Startup Grant.",
+    "Background includes multi-tenant Microsoft 365 architecture, security\n  operations, PowerShell/Python automation, and [CIPP](https://github.com/wranngle/CIPP)\n  context."
+  ],
+  "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\ncody@wranngle.com",
+  "reading": [],
+  "now_hiring": []
+}
