@@ -44,6 +44,8 @@ Python career-ops automation built like a GTM pipeline: profile data,
 application tracking, job-description evaluation, tailored CV generation, and
 repeatable portal workflows.
 
+<!-- bento -->
+
 ---
 
 **Operating record**
