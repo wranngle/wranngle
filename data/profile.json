@@ -38,7 +38,18 @@
     "Background includes multi-tenant Microsoft 365 architecture, security\n  operations, PowerShell/Python automation, and [CIPP](https://github.com/wranngle/CIPP)\n  context."
   ],
   "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\ncody@wranngle.com",
-  "reading": [],
+  "reading": [
+    {
+      "header": "### Currently reading",
+      "item": "*Designing Data-Intensive Applications* — Martin Kleppmann"
+    },
+    {
+      "item": "*The Manager's Path* — Camille Fournier"
+    },
+    {
+      "item": "*Voice User Interface Design* — Cathy Pearl"
+    }
+  ],
   "now_hiring": [
     {
       "header": "### Now hiring help on",
