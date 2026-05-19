@@ -23,6 +23,15 @@ and the operator can inspect what happened.
 - *The Manager's Path* — Camille Fournier
 - *Voice User Interface Design* — Cathy Pearl
 
+<!-- nightstand:start -->
+### Nightstand
+
+- <img src="https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg" alt="Cover of Designing Data-Intensive Applications" width="64" align="left" /> **[Designing Data-Intensive Applications](https://dataintensive.net/)** — Martin Kleppmann · 72% read
+- <img src="https://covers.openlibrary.org/b/isbn/9781736417911-M.jpg" alt="Cover of Staff Engineer" width="64" align="left" /> **[Staff Engineer](https://staffeng.com/book)** — Will Larson · 42% read
+- <img src="https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg" alt="Cover of The Pragmatic Programmer" width="64" align="left" /> **[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/)** — Andrew Hunt & David Thomas · 18% read
+
+<!-- nightstand:end -->
+
 ### Selected Work
 
 **[voice_ai_agent_evals](https://github.com/wranngle/voice_ai_agent_evals)**  

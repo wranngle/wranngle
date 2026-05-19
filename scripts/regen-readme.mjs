@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { injectNightstandSection, loadNightstandFromFile, renderNightstandMarkdown } from "./nightstand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const template = readFileSync(join(root, "templates/README.template.md"), "utf8");
@@ -27,5 +28,12 @@ const renderBlock = (block, item) => {
   return out;
 };
 
-const rendered = render(template, data);
+let rendered = render(template, data);
+
+const nightstandPath = join(root, "data/nightstand.yaml");
+if (existsSync(nightstandPath)) {
+  const nightstandBlock = renderNightstandMarkdown(loadNightstandFromFile(nightstandPath));
+  rendered = injectNightstandSection(rendered, nightstandBlock);
+}
+
 writeFileSync(join(root, "README.md"), rendered);
