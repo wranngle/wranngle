@@ -1,3 +1,4 @@
 node_modules/
 data/bento.json
 .DS_Store
+.artifacts/
