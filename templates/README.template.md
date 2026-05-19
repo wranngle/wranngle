@@ -4,6 +4,12 @@
 
 {{status}}
 
+{{#each now_hiring}}
+{{#if header}}{{header}}
+
+{{/if}}- {{item}}
+{{/each}}
+
 ### Selected Work
 
 {{#each selected_work}}

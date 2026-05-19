@@ -39,5 +39,13 @@
   ],
   "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\ncody@wranngle.com",
   "reading": [],
-  "now_hiring": []
+  "now_hiring": [
+    {
+      "header": "### Now hiring help on",
+      "item": "**Production voice-agent observability** — anyone deep on call-graph tracing, latency profiling, or eval harnesses for ElevenLabs / LiveKit / Pipecat stacks. Reach me at cody@wranngle.com."
+    },
+    {
+      "item": "**n8n + webhook security review** — second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library."
+    }
+  ]
 }
