@@ -52,8 +52,11 @@
   ],
   "now_hiring": [
     {
-      "header": "### Now hiring help on",
-      "item": "**Production voice-agent observability** — anyone deep on call-graph tracing, latency profiling, or eval harnesses for ElevenLabs / LiveKit / Pipecat stacks. Reach me at cody@wranngle.com."
+      "header": "### Currently open to",
+      "item": "**Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Reach me at cody@wranngle.com."
+    },
+    {
+      "item": "**Voice-agent observability collaboration** — call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks."
     },
     {
       "item": "**n8n + webhook security review** — second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library."
