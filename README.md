@@ -15,50 +15,50 @@ and the operator can inspect what happened.
 ### Currently open to
 
 - **Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Reach me at cody@wranngle.com.
-- **Voice-agent observability collaboration** — call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
-- **n8n + webhook security review** — second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
+- **Voice-agent observability collaboration**: call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
+- **n8n + webhook security review**: second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
 
 ### Currently reading
 
-- *Designing Data-Intensive Applications* — Martin Kleppmann
-- *The Manager's Path* — Camille Fournier
-- *Voice User Interface Design* — Cathy Pearl
+- *Designing Data-Intensive Applications* by Martin Kleppmann
+- *The Manager's Path* by Camille Fournier
+- *Voice User Interface Design* by Cathy Pearl
 
 <!-- nightstand:start -->
 ### Nightstand
 
-- <img src="https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg" alt="Cover of Designing Data-Intensive Applications" width="64" align="left" /> **[Designing Data-Intensive Applications](https://dataintensive.net/)** — Martin Kleppmann · 72% read
-- <img src="https://covers.openlibrary.org/b/isbn/9781736417911-M.jpg" alt="Cover of Staff Engineer" width="64" align="left" /> **[Staff Engineer](https://staffeng.com/book)** — Will Larson · 42% read
-- <img src="https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg" alt="Cover of The Pragmatic Programmer" width="64" align="left" /> **[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/)** — Andrew Hunt & David Thomas · 18% read
+- <img src="https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg" alt="Cover of Designing Data-Intensive Applications" width="64" align="left" /> **[Designing Data-Intensive Applications](https://dataintensive.net/)** by Martin Kleppmann · 72% read
+- <img src="https://covers.openlibrary.org/b/isbn/9781736417911-M.jpg" alt="Cover of Staff Engineer" width="64" align="left" /> **[Staff Engineer](https://staffeng.com/book)** by Will Larson · 42% read
+- <img src="https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg" alt="Cover of The Pragmatic Programmer" width="64" align="left" /> **[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/)** by Andrew Hunt & David Thomas · 18% read
 
 <!-- nightstand:end -->
 
 ### Selected Work
 
 **[voice_ai_agent_evals](https://github.com/wranngle/voice_ai_agent_evals)**  
-*Eval harness for ElevenLabs voice agents — deterministic scenarios, latency
-budgets, prompt versions, and scoring rubrics.*  
-Production voice agents need more than a happy-path transcript. This repo is
-the testing surface for synthetic conversations, regression checks, latency
-budgets, and prompt/version discipline around a real Sarah agent.
-[![Sarah Eval Demo](https://img.shields.io/badge/Watch-Loom_Walkthrough-blue?style=for-the-badge)](https://www.loom.com/share/PLACEHOLDER)
+*Audio-native eval and regression harness for ElevenLabs voice agents. Bun + TypeScript.*  
+Persona simulations, latency checks, prompt-versioning, scoring rubrics, and a
+prompt-fix loop for ElevenLabs Conversational AI. Deterministic offline tests
+run without credentials; live mode simulates personas against a real agent.
+Currently a v1.0 release candidate; the GEPA optimizer sidecar is stubbed.
 
 **[gtm_ops](https://github.com/wranngle/gtm_ops)**  
-*Voice-AI-led GTM runtime.*  
+*GTM pipeline runtime. TypeScript.*  
 The assembly layer that connects inbound voice interactions to CRM context,
-structured extraction, proposal inputs, branded PDFs, and audit trails. The
-important part is not the PDF; it is the path from caller intent to operator
-review.
+structured extraction, proposal inputs, branded PDFs, and audit logs, with an
+operator console. The important part is not the PDF; it is the path from caller
+intent to operator review.
 
 **[n8n](https://github.com/wranngle/n8n)**  
 Sanitized workflow library for lead intake, enrichment, routing, post-call
-processing, and webhook security middleware. n8n is glue, not the product, but
-the glue still needs naming, contracts, and failure handling.
+processing, and webhook-secret middleware, with per-workflow test fixtures.
+n8n is glue, not the product, but the glue still needs naming, contracts, and
+failure handling.
 
 **[wranngle_com](https://github.com/wranngle/wranngle_com)**  
-The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,
-Bun, and ArkType-validated lead capture with plain-text and JSON-LD profile
-surfaces for humans and machines.
+The wranngle.com site: React, Vite, Tailwind, and Cloudflare Pages Functions on
+Bun, with an embedded ElevenLabs voice agent, serverless lead capture, and
+plain-text plus JSON-LD profile surfaces for humans and machines.
 
 **[career_architect](https://github.com/wranngle/career_architect)**  
 Python career-ops automation built like a GTM pipeline: profile data,
@@ -72,14 +72,17 @@ repeatable portal workflows.
 - 10 years across MSP automation, escalation, documentation, and support
   environments.
 - 500+ client environments and 4,000+ endpoints supported.
-- 700+ SOP guides, templates, and runbooks authored for a 10-person team.
-- Production ElevenLabs voice-agent work across 15 client sites, with latency,
-  enrichment, handoff, and regression behavior measured.
-- Wranngle is a controlled public lab for service-business voice AI and GTM
-  automation, supported by an ElevenLabs Startup Grant.
+- 700-guide automation framework authored, standardizing delivery for a team
+  that was 10 engineers when built and is now about 20.
+- An on-call ElevenLabs Conversational AI voice agent in production across 5
+  client organizations spanning 20+ sites, integrated with Twilio, Telnyx, and
+  Bandwidth telephony, real-time CRM enrichment, schema-validated webhooks, and
+  synthetic-conversation regression tests. This work secured an ElevenLabs
+  Startup Grant for Applied Technology Group in 2025.
+- Wranngle is my own pre-revenue lab for service-business voice AI and GTM
+  automation; no clients, no revenue.
 - Background includes multi-tenant Microsoft 365 architecture, security
-  operations, PowerShell/Python automation, and [CIPP](https://github.com/wranngle/CIPP)
-  context.
+  operations, and PowerShell / Python automation.
 
 **Links:** [wranngle.com](https://wranngle.com) |
 [About](https://wranngle.com/about) |
