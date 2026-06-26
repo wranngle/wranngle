@@ -50,8 +50,8 @@ the glue still needs naming, contracts, and failure handling.
 
 **[wranngle_com](https://github.com/wranngle/wranngle_com)**  
 The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,
-Bun, and ArkType-validated lead capture with plain-text and JSON-LD profile
-surfaces for humans and machines.
+Bun, and server-validated lead capture, shared ArkType schemas, and
+plain-text and JSON-LD profile surfaces for humans and machines.
 
 **[career_architect](https://github.com/wranngle/career_architect)**  
 Python career-ops automation built like a GTM pipeline: profile data,

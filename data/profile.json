@@ -21,7 +21,7 @@
     {
       "slug": "wranngle_com",
       "headline": null,
-      "body": "The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,\nBun, and ArkType-validated lead capture with plain-text and JSON-LD profile\nsurfaces for humans and machines."
+      "body": "The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,\nBun, and server-validated lead capture, shared ArkType schemas, and\nplain-text and JSON-LD profile surfaces for humans and machines."
     },
     {
       "slug": "career_architect",
