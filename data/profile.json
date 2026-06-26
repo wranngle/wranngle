@@ -5,23 +5,23 @@
   "selected_work": [
     {
       "slug": "voice_ai_agent_evals",
-      "headline": "Audio-native eval and regression harness for ElevenLabs voice agents. Bun + TypeScript.",
-      "body": "Persona simulations, latency checks, prompt-versioning, scoring rubrics, and a\nprompt-fix loop for ElevenLabs Conversational AI. Deterministic offline tests\nrun without credentials; live mode simulates personas against a real agent.\nCurrently a v1.0 release candidate; the GEPA optimizer sidecar is stubbed."
+      "headline": "Eval harness for ElevenLabs voice agents: deterministic scenarios, latency\nbudgets, prompt versions, and scoring rubrics.",
+      "body": "Production voice agents need more than a happy-path transcript. This repo is\nthe testing surface for synthetic conversations, regression checks, latency\nbudgets, and prompt/version discipline around a real Sarah agent."
     },
     {
       "slug": "gtm_ops",
-      "headline": "GTM pipeline runtime. TypeScript.",
-      "body": "The assembly layer that connects inbound voice interactions to CRM context,\nstructured extraction, proposal inputs, branded PDFs, and audit logs, with an\noperator console. The important part is not the PDF; it is the path from caller\nintent to operator review."
+      "headline": "Voice-AI-led GTM runtime.",
+      "body": "The assembly layer that connects inbound voice interactions to CRM context,\nstructured extraction, proposal inputs, branded PDFs, and audit trails. The\nimportant part is not the PDF; it is the path from caller intent to operator\nreview."
     },
     {
       "slug": "n8n",
       "headline": null,
-      "body": "Sanitized workflow library for lead intake, enrichment, routing, post-call\nprocessing, and webhook-secret middleware, with per-workflow test fixtures.\nn8n is glue, not the product, but the glue still needs naming, contracts, and\nfailure handling."
+      "body": "Sanitized workflow library for lead intake, enrichment, routing, post-call\nprocessing, and webhook security middleware. n8n is glue, not the product, but\nthe glue still needs naming, contracts, and failure handling."
     },
     {
       "slug": "wranngle_com",
       "headline": null,
-      "body": "The wranngle.com site: React, Vite, Tailwind, and Cloudflare Pages Functions on\nBun, with an embedded ElevenLabs voice agent, serverless lead capture, and\nplain-text plus JSON-LD profile surfaces for humans and machines."
+      "body": "The public Wranngle site: React, Vite, Tailwind, Cloudflare Pages Functions,\nBun, and ArkType-validated lead capture with plain-text and JSON-LD profile\nsurfaces for humans and machines."
     },
     {
       "slug": "career_architect",
@@ -32,24 +32,12 @@
   "operating_record": [
     "10 years across MSP automation, escalation, documentation, and support\n  environments.",
     "500+ client environments and 4,000+ endpoints supported.",
-    "700-guide automation framework authored, standardizing delivery for a team\n  that was 10 engineers when built and is now about 20.",
-    "An on-call ElevenLabs Conversational AI voice agent in production across 5\n  client organizations spanning 20+ sites, integrated with Twilio, Telnyx, and\n  Bandwidth telephony, real-time CRM enrichment, schema-validated webhooks, and\n  synthetic-conversation regression tests. This work secured an ElevenLabs\n  Startup Grant for Applied Technology Group in 2025.",
-    "Wranngle is my own pre-revenue lab for service-business voice AI and GTM\n  automation; no clients, no revenue.",
-    "Background includes multi-tenant Microsoft 365 architecture, security\n  operations, and PowerShell / Python automation."
+    "700+ SOP guides, templates, and runbooks authored for a 10-person team.",
+    "Production ElevenLabs voice-agent work across 15 client sites in a prior MSP\n  role, with routing, handoff, and regression behavior tracked.",
+    "Wranngle is a controlled public lab for service-business voice AI and GTM\n  automation, supported by an ElevenLabs Startup Grant.",
+    "Background includes multi-tenant Microsoft 365 architecture, security\n  operations, PowerShell/Python automation, and CIPP\n  context."
   ],
   "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\ncody@wranngle.com",
-  "reading": [
-    {
-      "header": "### Currently reading",
-      "item": "*Designing Data-Intensive Applications* by Martin Kleppmann"
-    },
-    {
-      "item": "*The Manager's Path* by Camille Fournier"
-    },
-    {
-      "item": "*Voice User Interface Design* by Cathy Pearl"
-    }
-  ],
   "now_hiring": [
     {
       "header": "### Currently open to",

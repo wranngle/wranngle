@@ -65,7 +65,7 @@ export const renderNightstandMarkdown = ({ books }) => {
   for (const book of books) {
     const titleLink = book.link ? `[${book.title}](${book.link})` : book.title;
     const cover = `<img src="${book.cover}" alt="Cover of ${book.title}" width="64" align="left" />`;
-    out.push(`- ${cover} **${titleLink}** by ${book.author} · ${formatPercent(book.percent)} read`);
+    out.push(`- ${cover} **${titleLink}**, ${book.author} · ${formatPercent(book.percent)} read`);
   }
   out.push("");
   out.push(PLACEHOLDER_END);

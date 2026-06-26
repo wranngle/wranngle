@@ -10,12 +10,6 @@
 {{/if}}- {{item}}
 {{/each}}
 
-{{#each reading}}
-{{#if header}}{{header}}
-
-{{/if}}- {{item}}
-{{/each}}
-
 <!-- nightstand -->
 
 ### Selected Work
