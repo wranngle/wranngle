@@ -66,8 +66,9 @@ repeatable portal workflows.
   environments.
 - 500+ client environments and 4,000+ endpoints supported.
 - 700+ SOP guides, templates, and runbooks authored for a 10-person team.
-- Production ElevenLabs voice-agent work across 15 client sites in a prior MSP
-  role, with routing, handoff, and regression behavior tracked.
+- Production ElevenLabs voice-agent work across 5 client organizations and
+  20+ sites in a prior MSP role, with routing, handoff, and regression
+  behavior tracked.
 - Wranngle is a controlled public lab for service-business voice AI and GTM
   automation, supported by an ElevenLabs Startup Grant.
 - Background includes multi-tenant Microsoft 365 architecture, security
