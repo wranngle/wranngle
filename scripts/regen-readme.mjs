@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { injectNightstandSection, loadNightstandFromFile, renderNightstandMarkdown } from "./nightstand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const template = readFileSync(join(root, "templates/README.template.md"), "utf8");
@@ -28,12 +27,10 @@ const renderBlock = (block, item) => {
   return out;
 };
 
-let rendered = render(template, data);
-
-const nightstandPath = join(root, "data/nightstand.yaml");
-if (existsSync(nightstandPath)) {
-  const nightstandBlock = renderNightstandMarkdown(loadNightstandFromFile(nightstandPath));
-  rendered = injectNightstandSection(rendered, nightstandBlock);
-}
+// Nightstand injection retired 2026-07-08: reading-list signal is for friends,
+// not the recruiters this README serves. scripts/nightstand.mjs and
+// data/nightstand.yaml stay in the repo; re-add the injection call to bring
+// the section back.
+const rendered = render(template, data);
 
 writeFileSync(join(root, "README.md"), rendered);

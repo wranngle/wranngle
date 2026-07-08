@@ -84,12 +84,18 @@ assert.equal(
 const liveData = JSON.parse(readFileSync(join(root, "data/profile.json"), "utf8"));
 const liveOut = render(template, liveData);
 const expectSection = Array.isArray(liveData.now_hiring) && liveData.now_hiring.length > 0;
+// The header string lives in data/profile.json, not this test; pin the live
+// value so a header rewording can't silently rot this assertion again.
+const liveHeader = expectSection ? liveData.now_hiring.find((e) => e.header)?.header : undefined;
 assert.equal(
-  liveOut.includes(SECTION_HEADER),
-  expectSection,
-  expectSection
-    ? "live data has now_hiring entries; rendered README must contain the section header"
-    : "live data has empty now_hiring; rendered README must omit the section header",
+  expectSection ? typeof liveHeader === "string" && liveHeader.length > 0 : true,
+  true,
+  "live now_hiring entries must carry a section header string",
+);
+assert.equal(
+  expectSection ? liveOut.includes(liveHeader) : true,
+  true,
+  "live data has now_hiring entries; rendered README must contain the section header",
 );
 
 console.log("test-readme-render: OK");

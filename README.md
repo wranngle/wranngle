@@ -18,15 +18,6 @@ and the operator can inspect what happened.
 - **Voice-agent observability collaboration**: call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
 - **n8n + webhook security review**: second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
 
-<!-- nightstand:start -->
-### Nightstand
-
-- <img src="https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg" alt="Cover of Designing Data-Intensive Applications" width="64" align="left" /> **[Designing Data-Intensive Applications](https://dataintensive.net/)**, Martin Kleppmann · 72% read
-- <img src="https://covers.openlibrary.org/b/isbn/9781736417911-M.jpg" alt="Cover of Staff Engineer" width="64" align="left" /> **[Staff Engineer](https://staffeng.com/book)**, Will Larson · 42% read
-- <img src="https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg" alt="Cover of The Pragmatic Programmer" width="64" align="left" /> **[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/)**, Andrew Hunt & David Thomas · 18% read
-
-<!-- nightstand:end -->
-
 ### Selected Work
 
 **[voice_ai_agent_evals](https://github.com/wranngle/voice_ai_agent_evals)**  
@@ -62,15 +53,17 @@ repeatable portal workflows.
 
 **Operating record**
 
-- 10 years across MSP automation, escalation, documentation, and support
+- 10+ years across MSP automation, escalation, documentation, and support
   environments.
 - 500+ client environments and 4,000+ endpoints supported.
-- 700+ SOP guides, templates, and runbooks authored for a 10-person team.
+- 700+ SOP guides, templates, and runbooks authored for an engineering team
+  of 10, now ~20.
 - Production ElevenLabs voice-agent work across 5 client organizations and
-  20+ sites in a prior MSP role, with routing, handoff, and regression
-  behavior tracked.
+  20+ sites in an MSP engineering role, with routing, handoff, and regression
+  behavior tracked; the employer was selected for an ElevenLabs Startup Grant
+  in 2025 for this work.
 - Wranngle is a controlled public lab for service-business voice AI and GTM
-  automation, supported by an ElevenLabs Startup Grant.
+  automation.
 - Background includes multi-tenant Microsoft 365 architecture, security
   operations, PowerShell/Python automation, and CIPP
   context.
