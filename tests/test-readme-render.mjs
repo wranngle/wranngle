@@ -35,6 +35,7 @@ const renderBlock = (block, item) => {
 
 const baseCtx = {
   name: "wranngle",
+  tagline: "T",
   intro: "x",
   status: "S",
   selected_work: [],

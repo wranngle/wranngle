@@ -1,6 +1,7 @@
 {
-  "name": "wranngle",
-  "intro": "I build voice AI agents, workflow automation, and the small full-stack systems\naround them: the webhook contracts, eval harnesses, operator surfaces, CRM\nhandoffs, runbooks, and failure paths that make an automation usable after the\ndemo.\n\nThe shape of the work is usually some mix of AI automation engineering, voice AI\nengineering, workflow automation, and full-stack TypeScript. The useful overlap\nis where an agent understands the job, the surrounding system moves the work,\nand the operator can inspect what happened.",
+  "name": "Cody Arnold",
+  "tagline": "senior engineer, production voice-agent automation",
+  "intro": "Senior IC who turns voice-agent demos into production automation that support, sales, and ops teams can inspect, hand off, and trust. Open to senior voice AI, AI automation, and full-stack TypeScript roles; proof below, contact via GitHub or LinkedIn.",
   "status": "🟪 **Status: Exploring new opportunities**",
   "selected_work": [
     {
@@ -41,7 +42,7 @@
   "now_hiring": [
     {
       "header": "### Currently open to",
-      "item": "**Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Reach me at cody@wranngle.com."
+      "item": "**Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Email Cody at cody@wranngle.com."
     },
     {
       "item": "**Voice-agent observability collaboration**: call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks."
