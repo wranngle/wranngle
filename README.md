@@ -1,24 +1,16 @@
-# wranngle
+# Cody Arnold: senior engineer, production voice-agent automation
 
-I build voice AI agents, workflow automation, and the small full-stack systems
-around them: the webhook contracts, eval harnesses, operator surfaces, CRM
-handoffs, runbooks, and failure paths that make an automation usable after the
-demo.
-
-The shape of the work is usually some mix of AI automation engineering, voice AI
-engineering, workflow automation, and full-stack TypeScript. The useful overlap
-is where an agent understands the job, the surrounding system moves the work,
-and the operator can inspect what happened.
+Senior IC who turns voice-agent demos into production automation that support, sales, and ops teams can inspect, hand off, and trust. Open to senior voice AI, AI automation, and full-stack TypeScript roles; proof below, contact via GitHub or LinkedIn.
 
 🟪 **Status: Exploring new opportunities**
 
 ### Currently open to
 
-- **Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Reach me at cody@wranngle.com.
+- **Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Email Cody at cody@wranngle.com.
 - **Voice-agent observability collaboration**: call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
 - **n8n + webhook security review**: second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
 
-### Selected Work
+### Production automation proof
 
 **[voice_ai_agent_evals](https://github.com/wranngle/voice_ai_agent_evals)**  
 *Eval harness for ElevenLabs voice agents: deterministic scenarios, latency
@@ -51,7 +43,7 @@ repeatable portal workflows.
 
 ---
 
-**Operating record**
+### Reliability track record
 
 - 10+ years across MSP automation, escalation, documentation, and support
   environments.

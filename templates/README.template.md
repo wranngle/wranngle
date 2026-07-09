@@ -1,4 +1,4 @@
-# {{name}}
+# {{name}}: {{tagline}}
 
 {{intro}}
 
@@ -10,7 +10,7 @@
 {{/if}}- {{item}}
 {{/each}}
 
-### Selected Work
+### Production automation proof
 
 {{#each selected_work}}
 **[{{slug}}](https://github.com/wranngle/{{slug}})**{{#if headline}}  
@@ -23,7 +23,7 @@
 {{/each}}
 ---
 
-**Operating record**
+### Reliability track record
 
 {{#each operating_record}}
 - {{.}}
