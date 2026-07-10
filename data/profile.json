@@ -38,7 +38,8 @@
     "Wranngle is a controlled public lab for service-business voice AI and GTM\n  automation.",
     "Background includes multi-tenant Microsoft 365 architecture, security\n  operations, PowerShell/Python automation, and CIPP\n  context."
   ],
-  "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\ncody@wranngle.com",
+  "license": "MIT",
+  "links": "[wranngle.com](https://wranngle.com) |\n[About](https://wranngle.com/about) |\n[Plain-text profile](https://wranngle.com/cody-arnold.md) |\n[LinkedIn](https://linkedin.com/in/codyarnold96) |\ncody@wranngle.com",
   "now_hiring": [
     {
       "header": "### Currently open to",

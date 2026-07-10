@@ -27,3 +27,5 @@
 {{/each}}
 
 **Links:** {{links}}
+
+License: [{{license}}](LICENSE)

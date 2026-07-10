@@ -63,4 +63,7 @@ repeatable portal workflows.
 **Links:** [wranngle.com](https://wranngle.com) |
 [About](https://wranngle.com/about) |
 [Plain-text profile](https://wranngle.com/cody-arnold.md) |
+[LinkedIn](https://linkedin.com/in/codyarnold96) |
 cody@wranngle.com
+
+License: [MIT](LICENSE)

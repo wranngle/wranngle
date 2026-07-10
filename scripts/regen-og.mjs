@@ -261,33 +261,64 @@ const buf = makeBuffer();
 fillRect(buf, 0, 0, WIDTH, 12, palette.accent);
 fillRect(buf, 0, HEIGHT - 12, WIDTH, 12, palette.accent);
 
-drawText(buf, "wranngle", PADDING, PADDING, 10, palette.fg);
+// All text is sized and stacked against the profile data actually in play, so
+// a longer name/tagline/status shrinks to fit instead of overflowing the
+// canvas or colliding with the block below it (the bug this replaced: a
+// hardcoded "wranngle" title/tagline frozen pre-identity-rename, and fixed Y
+// offsets that assumed short content and ran the stats block into the footer).
+const maxContentWidth = WIDTH - PADDING * 2;
 
-const tagline = "voice AI agents / workflow automation / full-stack TS";
-drawText(buf, tagline, PADDING, PADDING + 100, 4, palette.muted);
+function fitScale(text, maxScale, maxWidthPx, minScale = 2, tracking = 1) {
+  for (let s = maxScale; s >= minScale; s--) {
+    if (textWidth(text, s, tracking) <= maxWidthPx) return s;
+  }
+  return minScale;
+}
+
+let cursorY = PADDING;
+
+const titleText = profile.name || "wranngle";
+const titleScale = fitScale(titleText, 10, maxContentWidth, 6);
+drawText(buf, titleText, PADDING, cursorY, titleScale, palette.fg);
+cursorY += 7 * titleScale + 28;
+
+const tagline = profile.tagline || "voice AI agents / workflow automation / full-stack TS";
+const taglineScale = fitScale(tagline, 4, maxContentWidth, 2);
+drawText(buf, tagline, PADDING, cursorY, taglineScale, palette.muted);
+cursorY += 7 * taglineScale + 40;
 
 const statusText = statusLine || "Status";
 const badgePad = 24;
-const badgeScale = 5;
+const badgeScale = fitScale(statusText, 5, maxContentWidth - badgePad * 2, 3);
 const badgeTextWidth = textWidth(statusText, badgeScale);
 const badgeW = badgeTextWidth + badgePad * 2;
 const badgeH = 7 * badgeScale + badgePad * 2;
-const badgeY = PADDING + 200;
-fillRect(buf, PADDING, badgeY, badgeW, badgeH, palette.badgeBg);
-fillRect(buf, PADDING, badgeY, 8, badgeH, palette.accent);
-drawText(buf, statusText, PADDING + badgePad, badgeY + badgePad, badgeScale, palette.fg);
-
-const statsY = badgeY + badgeH + 60;
-const statsLabel = "This week";
-drawText(buf, statsLabel, PADDING, statsY, 4, palette.muted);
-let cursorY = statsY + 50;
-for (const line of stats) {
-  drawText(buf, line, PADDING, cursorY, 5, palette.fg);
-  cursorY += 60;
-}
+fillRect(buf, PADDING, cursorY, badgeW, badgeH, palette.badgeBg);
+fillRect(buf, PADDING, cursorY, 8, badgeH, palette.accent);
+drawText(buf, statusText, PADDING + badgePad, cursorY + badgePad, badgeScale, palette.fg);
+cursorY += badgeH + 44;
 
 const footer = "github.com/wranngle";
-drawText(buf, footer, PADDING, HEIGHT - PADDING - 7 * 4, 4, palette.muted);
+const footerScale = 4;
+const footerY = HEIGHT - PADDING - 7 * footerScale;
+
+const statsLabel = "This week";
+drawText(buf, statsLabel, PADDING, cursorY, 4, palette.muted);
+cursorY += 7 * 4 + 22;
+
+// Fit the stats block into whatever vertical room remains above the footer
+// instead of assuming a fixed line count/height fits — this is what let the
+// "repos tracked" line run into the footer before.
+const statsBudget = Math.max(0, footerY - 20 - cursorY);
+const perLineBudget = stats.length > 0 ? statsBudget / stats.length : 0;
+const statsLineScale = Math.max(3, Math.min(5, Math.floor((perLineBudget - 15) / 7)));
+const statsStep = 7 * statsLineScale + 15;
+for (const line of stats) {
+  drawText(buf, line, PADDING, cursorY, statsLineScale, palette.fg);
+  cursorY += statsStep;
+}
+
+drawText(buf, footer, PADDING, footerY, footerScale, palette.muted);
 
 const png = buildPng(buf);
 const outPath = join(root, "og.png");
