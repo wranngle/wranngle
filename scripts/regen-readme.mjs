@@ -27,10 +27,11 @@ const renderBlock = (block, item) => {
   return out;
 };
 
-// Nightstand injection retired 2026-07-08: reading-list signal is for friends,
-// not the recruiters this README serves. scripts/nightstand.mjs and
-// data/nightstand.yaml stay in the repo; re-add the injection call to bring
-// the section back.
+// This README is a deliberately tight recruiter surface: profile.json is the
+// only source, no auto-updating feed sections. (The bento/hiring/journal/
+// nightstand/sparkline/uptime feed generators were removed 2026-07-09 as dead
+// code — they produced no live output. The now-shipping data still feeds the
+// social OG card via regen-og.mjs.)
 const rendered = render(template, data);
 
 writeFileSync(join(root, "README.md"), rendered);
