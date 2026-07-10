@@ -6,7 +6,7 @@ Senior IC who turns voice-agent demos into production automation that support, s
 
 ### Currently open to
 
-- **Senior IC roles** in AI / voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Email Cody at cody@wranngle.com.
+- **AI Automation roles** in voice-agent engineering, automation engineering, forward-deployed engineering, or solutions engineering. Remote, US-based. Email Cody at cody@wranngle.com.
 - **Voice-agent observability collaboration**: call-graph tracing, latency profiling, eval harnesses for ElevenLabs / LiveKit / Pipecat stacks.
 - **n8n + webhook security review**: second eyes on signature verification, replay-protection windows, and idempotency patterns across the public workflow library.
 
