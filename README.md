@@ -37,9 +37,9 @@ Bun, and server-validated lead capture, shared ArkType schemas, and
 plain-text and JSON-LD profile surfaces for humans and machines.
 
 **[career_architect](https://github.com/wranngle/career_architect)**  
-Python career-ops automation built like a GTM pipeline: profile data,
-application tracking, job-description evaluation, tailored CV generation, and
-repeatable portal workflows.
+Node.js/TypeScript career-ops automation built like a GTM pipeline: profile
+data, application tracking, job-description evaluation, tailored CV
+generation, and repeatable portal workflows.
 
 ---
 
