@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // smoke test: the "Now hiring help on" section in templates/README.template.md
-// renders conditionally — present only when data/profile.json's now_hiring
+// renders conditionally: present only when data/profile.json's now_hiring
 // array is non-empty. Tests the template's conditional rendering against the
 // same rendering logic the production regenerator uses, without mutating the
 // committed README.md or data/profile.json on disk.

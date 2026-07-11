@@ -9,7 +9,7 @@ setup() {
   cd "$REPO_ROOT"
 }
 
-# central promise: regen is idempotent — running twice yields no diff.
+# central promise: regen is idempotent : running twice yields no diff.
 @test "regen: running twice produces no git diff on README.md" {
   node scripts/regen-readme.mjs
   run git diff --exit-code README.md

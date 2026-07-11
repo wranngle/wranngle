@@ -29,9 +29,8 @@ const renderBlock = (block, item) => {
 
 // This README is a deliberately tight recruiter surface: profile.json is the
 // only source, no auto-updating feed sections. (The bento/hiring/journal/
-// nightstand/sparkline/uptime feed generators were removed 2026-07-09 as dead
-// code — they produced no live output. The now-shipping data still feeds the
-// social OG card via regen-og.mjs.)
+// nightstand/sparkline/uptime feed generators were removed 2026-07-09, and the
+// OG-card pipeline was removed 2026-07-11, as dead code with no live output.)
 const rendered = render(template, data);
 
 writeFileSync(join(root, "README.md"), rendered);
